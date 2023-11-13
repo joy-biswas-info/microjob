@@ -22,6 +22,8 @@
                 align-items: center;
                 justify-content: space-between;
                 background-color: #fff;
+                border-radius: 5px;
+
                 img{
                     width: 25px;
                     height: 25px;
@@ -35,14 +37,19 @@
                     background-color: transparent;
                 }
                 button{
-                    padding: 10px 20px;
+                    padding: 20px 30px;
                     background-color:#33ec96 ;
+                    color: #fff;
+                    font-weight: 600;
                     cursor: pointer;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+
                 }
             }
             .popular{
                 display: flex;
-                margin: 10px 0;
+                margin: 20px 0 0 0;
                 gap: 15px;
                 align-items: center;
 
