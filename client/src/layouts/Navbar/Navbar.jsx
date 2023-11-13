@@ -46,15 +46,10 @@ const Navbar = () => {
           {!currentUser?.isSeller && <span>Become a seller</span>}
           {!currentUser && <button>Join</button>}
           {currentUser && (
-            <div className="user">
-              <img
-                src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Fpng%2F19896008-male-user-avatar-icon-in-flat-design-style-person-signs-illustration&psig=AOvVaw2rCP_LZaIZpSXEFVywF7Mr&ust=1699894423119000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCJi7t6v2voIDFQAAAAAdAAAAABAE"
-                alt=""
-                height="50"
-              />
-              <span onClick={() => setOpen(!open)}>
-                {currentUser?.username}
-              </span>
+            <div className="user" onClick={() => setOpen(!open)}>
+              <img src="./images/man.png" alt="" height="50" />
+
+              <span>{currentUser?.username}</span>
               <div className="options" onClick={() => setOpen(!open)}>
                 {open && (
                   <>

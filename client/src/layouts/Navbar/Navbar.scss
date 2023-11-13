@@ -2,7 +2,7 @@
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #1CBF73;
+background-color: #0F4528;
 flex-direction: column;
 position: sticky;
 top: 0; 
@@ -54,6 +54,8 @@ transition: 0.3s all ease;
             }
             .user{
                 position: relative;
+                display: flex;
+                align-items: center;
                 img{
                     width: 32px;
                     height: 32px;
