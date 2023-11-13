@@ -6,7 +6,6 @@ const Navbar = () => {
   const [active, setActive] = useState(false);
   const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
-  console.log(open);
   const isActive = () => {
     window.scrollY > 0 ? setActive(true) : setActive(false);
   };
@@ -23,7 +22,7 @@ const Navbar = () => {
     username: "Joy Biswas",
     isSeller: true,
   };
-  console.log(pathname);
+
   return (
     <nav className={active || pathname !== "/" ? "navbar active" : "navbar"}>
       <div className="container">
@@ -70,7 +69,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      <hr />
+      {active && <hr />}
       <div className={active || pathname !== "/" ? "active menu" : "menu"}>
         <Link to="/"> Graphics & Design</Link>
         <Link to="/">Programming & Tech</Link>

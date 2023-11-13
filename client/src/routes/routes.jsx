@@ -11,12 +11,11 @@ import Add from "../pages/add/Add";
 import Messages from "../pages/messages/Messages";
 import Message from "../pages/message/Message";
 import Home from "../pages/home/Home";
-import MainLayout from "../layouts/Layouts";
 
 const routes = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout />,
+    element: <App />,
     children: [
       {
         path: "/",

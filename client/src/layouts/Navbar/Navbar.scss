@@ -7,6 +7,7 @@ flex-direction: column;
 position: sticky;
 top: 0; 
 transition: 0.3s all ease;
+z-index: 9999;
 &.active{
     background-color: #fff;
     color: #000;
@@ -18,8 +19,7 @@ transition: 0.3s all ease;
         align-items: center;
         .logo{
             font-size: 40px;
-            font-weight: 600;
-
+            font-weight: 700;
             .text{ 
                 color: #fff;
                 &.active{
@@ -84,6 +84,9 @@ transition: 0.3s all ease;
     }
     hr{
         width: 100%;
+        color: #000;
+        height: 0;
+        border: 1px solid lightgray;
     }
     .menu{
         width: 1440px;

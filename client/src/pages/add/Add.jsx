@@ -1,3 +1,4 @@
+import "./Add.scss";
 const Add = () => {
   return <div></div>;
 };

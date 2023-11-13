@@ -1,4 +1,4 @@
-import React from "react";
+import CategorySlider from "../../components/categorySlider/categorySlider";
 import Featured from "../../components/featured/Featured";
 import Trusted from "../../components/trusted/Trusted";
 
@@ -7,6 +7,7 @@ const Home = () => {
     <div>
       <Featured />
       <Trusted />
+      <CategorySlider />
     </div>
   );
 };
