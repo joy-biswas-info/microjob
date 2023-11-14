@@ -1,0 +1,27 @@
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container{
+        width: 1440px;
+        h3{
+            color: #000;
+        }
+        .footer-widget{
+            width: 350px;
+            .footer-menu{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                .link{
+                    color: #000;
+                    padding: 8px;
+                    &:hover{
+                        background-color: lightgray;
+                    }
+                }
+            }
+        }
+
+    }
+}

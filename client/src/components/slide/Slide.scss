@@ -12,5 +12,8 @@
         height: 350px;
         width: 100%;
         object-fit: cover;
+        &:hover{
+            box-shadow: inset 3px 5px 6px #ccc;
+        }
     }
 }
