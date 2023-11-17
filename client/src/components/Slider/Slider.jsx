@@ -1,9 +1,9 @@
+/* eslint-disable react/prop-types */
 import Slide from "../slide/Slide";
 import Carousel from "better-react-carousel";
-import "./CategorySlider.scss";
-import PropTypes from "prop-types";
+import "./Slider.scss";
 
-const CategorySlider = ({ items }) => {
+const Slider = ({ items, slidePerRow, gap, rowCount }) => {
   if (!items || items.length === 0) {
     return <p>Loading...</p>;
   }
@@ -11,7 +11,7 @@ const CategorySlider = ({ items }) => {
     <div className="category-slider">
       <div className="container">
         <h2>Popular services</h2>
-        <Carousel cols={5} rows={1} gap={50} loop>
+        <Carousel cols={slidePerRow} rows={rowCount} gap={gap} loop>
           {items?.map((card) => (
             <Carousel.Item key={card.id}>
               <Slide item={card} />
@@ -23,8 +23,4 @@ const CategorySlider = ({ items }) => {
   );
 };
 
-CategorySlider.propTypes = {
-  items: PropTypes.array.isRequired,
-};
-
-export default CategorySlider;
+export default Slider;

@@ -31,13 +31,13 @@ const Navbar = () => {
             <span
               className={active || pathname !== "/" ? "text active" : "text"}
             >
-              Fiverr
+              Jiverr
             </span>
           </Link>
           <span className="dot">.</span>
         </div>
         <div className="links">
-          <span>Fiverr Business</span>
+          <span>Jiverr Business</span>
           <span>Explore</span>
           <span>English</span>
           {!currentUser && <span>Sign In</span>}

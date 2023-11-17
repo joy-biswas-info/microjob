@@ -5,6 +5,7 @@
     border: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
 }
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
