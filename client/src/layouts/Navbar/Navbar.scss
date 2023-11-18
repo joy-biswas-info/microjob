@@ -11,6 +11,8 @@ z-index: 9999;
 &.active{
     background-color: #fff;
     color: #000;
+    box-shadow: 1px 1px 20px 1px #555;
+
 }
     .container{
         width: 1440px;
