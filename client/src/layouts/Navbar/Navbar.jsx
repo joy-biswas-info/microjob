@@ -69,7 +69,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      {active && <hr />}
+      {(active || pathname !== "/") && <hr />}
       <div className={active || pathname !== "/" ? "active menu" : "menu"}>
         <Link to="/"> Graphics & Design</Link>
         <Link to="/">Programming & Tech</Link>
