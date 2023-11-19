@@ -16,7 +16,7 @@ const Gigs = () => {
       <div className="container">
         <div className="breadcumbs">Home &gt; Design</div>
         <h1>Ai Artist</h1>
-        <p>
+        <p className="explore">
           Explore the boundaries of art and technology with Fiverr&apos;s AI
           artists
         </p>

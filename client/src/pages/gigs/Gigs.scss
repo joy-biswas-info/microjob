@@ -7,16 +7,18 @@
   .container {
     width: 1440px;
     .breadcumbs {
+      margin: 10px 0;
     }
     h1 {
+      margin: 10px 0;
     }
-    p {
+    .explore {
+      margin: 10px 0;
     }
     .option {
       display: flex;
       justify-content: space-between;
       margin: 10px 0;
-
       .left {
         input {
           padding: 8px;

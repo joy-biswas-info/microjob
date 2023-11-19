@@ -36,9 +36,9 @@ const Navbar = () => {
           </Link>
           <span className="dot">.</span>
         </div>
-        <div className="links">
-          <span>Jiverr Business</span>
-          <span>Explore</span>
+        <div className={active || pathname !== "/" ? "links active" : "links"}>
+          <Link to="/gigs">Jiverr Business</Link>
+          <Link to="/gigs">Explore</Link>
           <span>English</span>
           {!currentUser && <span>Sign In</span>}
 
@@ -71,16 +71,16 @@ const Navbar = () => {
       </div>
       {(active || pathname !== "/") && <hr />}
       <div className={active || pathname !== "/" ? "active menu" : "menu"}>
-        <Link to="/"> Graphics & Design</Link>
-        <Link to="/">Programming & Tech</Link>
-        <Link to="/">Digital Marketing</Link>
-        <Link to="/">Video & Animation</Link>
-        <Link to="/">Writing & Translation</Link>
-        <Link to="/">Business</Link>
-        <Link to="/">Music & Audio</Link>
-        <Link to="/"> Data</Link>
-        <Link to="/"> Photography</Link>
-        <Link to="/"> AI Services</Link>
+        <Link to="/gigs"> Graphics & Design</Link>
+        <Link to="/gigs">Programming & Tech</Link>
+        <Link to="/gigs">Digital Marketing</Link>
+        <Link to="/gigs">Video & Animation</Link>
+        <Link to="/gigs">Writing & Translation</Link>
+        <Link to="/gigs">Business</Link>
+        <Link to="/gigs">Music & Audio</Link>
+        <Link to="/gigs"> Data</Link>
+        <Link to="/gigs"> Photography</Link>
+        <Link to="/gigs"> AI Services</Link>
       </div>
     </nav>
   );
