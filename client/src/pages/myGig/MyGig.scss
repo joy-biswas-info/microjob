@@ -6,10 +6,15 @@
     .title {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 20px;
+      align-items: center;
       h1 {
       }
       .link {
         padding: 8px 20px;
+        background-color: #1dbf73;
+        color: #fff;
+        border-radius: 8px;
       }
     }
     table {

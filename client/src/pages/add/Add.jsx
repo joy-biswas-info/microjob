@@ -1,6 +1,10 @@
 import "./Add.scss";
 const Add = () => {
-  return <div></div>;
+  return (
+    <div className="addGig">
+      <div className="container"></div>
+    </div>
+  );
 };
 
 export default Add;
