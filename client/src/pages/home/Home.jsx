@@ -6,7 +6,7 @@ import "./Home.scss";
 
 const Home = () => {
   return (
-    <div>
+    <div className="home">
       <Featured />
       <Trusted />
       <Slider items={cards} slidePerRow={5} gap={20} rowCount={1} />

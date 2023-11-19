@@ -9,14 +9,17 @@ const Featured = () => {
             Find the right <span>freelance</span> service, right away
           </h1>
           <div className="search">
-            <img src="./images/search.png" alt="" />
             <input
               type="text"
               name="search"
               id="search"
               placeholder="Search for any services..."
             />
-            <button>Search</button>
+            <button>
+              {" "}
+              <img src="./images/search.png" alt="" />
+              Search
+            </button>
           </div>
           <div className="popular">
             <p>Popular: </p>
